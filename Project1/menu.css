@@ -1,0 +1,73 @@
+.nested_div{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+.toggler{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+.hamburger{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+     width: 60px;
+     height: 60px;
+     z-index: 2;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     background-color: #111;
+     cursor: pointer;
+}
+.hamburger>div{
+    position: absolute;
+    width: 60%;
+    height: .2rem;
+    border-radius: 1.5px;
+    background-color: #fff44f;
+    cursor: pointer;
+    transition: .4s;
+
+}
+.hamburger>div::before{
+   content: '';
+   position: absolute;
+   top: -10px;
+   left: 0px;
+   width: 100%;
+   height: .2rem;
+   border-radius: 1.5px;
+   background-color: #fff44f;   
+   transition: .4s;
+}
+.hamburger>div::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: .2rem;
+    border-radius: 1.5px;
+    background-color: #fff44f;   
+    transition: .4s;
+}
+.toggler:checked + .hamburger>div{
+    transform: rotate(130deg);
+} 
+.toggler:checked + .hamburger>div::before,.toggler:checked + .hamburger>div::after{
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+}
+.menu{
+    visibility: hidden;
+}
