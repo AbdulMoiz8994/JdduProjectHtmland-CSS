@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.contant_Box{
+    max-width: 1000px;
+  display: grid;  
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.left{
+    height: 100%;
+}
+.left img{
+    width: 400px;
+    padding-top: 1rem;
+}
+.right{
+   padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    border-radius: 2px;
+    /* background-color: #2ecc; */
+    background-color: rgba(30, 85, 250, 0.50);
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1rem;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+}
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(30, 85, 250, 0.50);
+}
+.btn{
+    width: 50%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer; 
+    transition: 0.3s;
+    background-color: #5A20CB;
+  color: white;
+}
+
+
+@media only screen and (max-width: 880px) {
+  
+    .contant_Box{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .left img{
+       width: 300px;
+    }
+  }
