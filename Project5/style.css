@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --success-color: green;
+    --error-color: orangered; 
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    height: 100vh;
+    /* background-color: aqua; */
+    background-color:rgba(0, 0, 0, 0.1);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.formAuth{
+    padding: 30px 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: xx-large;
+}
+.field{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.field label{
+    color: #777;
+    display: block; 
+    margin-bottom: 5px;   
+}
+.field input{
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.field input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.field.success input{
+    border-color: var(--success-color);
+
+}
+.field.error input{
+    border-color: var(--error-color);
+}
+.field small {
+    color: var(--error-color);
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.field.error small{
+    visibility: visible;
+}
+
+button{
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+   font-size: larger;
+   background-color: navy;
+   border: 2px solid navy;
+   border-radius: 3px;  
+   cursor: pointer;
+   transform: 0.3s;
+   color: white;
+}
+

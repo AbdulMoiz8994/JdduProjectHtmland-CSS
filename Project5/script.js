@@ -21,20 +21,22 @@ console.log(confirmPassword);
 function showError(input, message){
 // from parentElement we get the paret's Tag
 let formContorl=input.parentElement;
-// console.log(formContorl, message);
-
+console.log(formContorl, message);
+//   assign new class
+    formContorl.className='field error'
  const smallTag=formContorl.querySelector('small')
 //    console.log(smallTag);
    smallTag.innerHTML=message
+
 }
 function showSuccess(input){
     // same thing here
     let formContorl=input.parentElement
     // console.log(formContorl);
-     
-    const smallTag=formContorl.querySelector('small')
-    // console.log(smallTag);
-
+    //   assign new class
+     formContorl.className='field success'
+    
+        
 }
 form.addEventListener('submit',(e) =>{
     // for avoding re-rendering to on submit 
@@ -51,38 +53,36 @@ if(userName.value === ''){
 }else{
     showSuccess(userName)
 }
-userName.value=""
+// userName.value=""
 
 if(email.value === ''){
     showError(email,'Please write email')
 }else{
     showSuccess(email)
 }
-email.value=""
+// email.value=""
 
 if(number.value === ''){
     showError(number,'Please write number')
 }else{
     showSuccess(number)
 }
-number.value=""
+// number.value=""
 if(password.value === ''){
     showError(password,'Please write Password')
 }else{
     showSuccess(password)
 }
-password.value=""
+// password.value=""
 if(confirmPassword.value === ''){
     showError(confirmPassword,'Please write correct Password')
 }else{
     showSuccess(confirmPassword)
 }
-confirmPassword.value=""
+// confirmPassword.value=""
 
 if(password.value !== confirmPassword.value){
     alert('Please write correct Password')
-}else{
-    alert('Form Has Submitted')
 }
 
 })
