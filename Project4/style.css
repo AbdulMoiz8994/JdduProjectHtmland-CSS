@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --bgcolor: white
+}
+body{
+    /* width: 100%;
+    height: 100vh; */
+    font-family: 'Quicksand', sans-serif;
+
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    z-index: 2;
+}
+.header{
+    position: fixed;
+    top: 3%;
+    left: 6%;
+    display: flex;    
+    z-index: 1;
+    width: 90%;
+}
+.toggler{
+    position: absolute;
+    top: 0.1rem;
+    right: 0.5rem;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.hamBurger{
+    position: absolute;
+    top: -0.5rem;
+    right: 0.2rem;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;  
+    transition: 0.5s  ;
+}
+.hamBurger>div{
+    position: absolute;
+    width: 70%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: var(--bgcolor);
+    cursor: pointer;     
+    transition: 0.5s;
+}
+.hamBurger>div::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: var(--bgcolor);
+    cursor: pointer;     
+    transition: 0.5s;
+}
+.hamBurger>div::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color:var(--bgcolor);
+    cursor: pointer;     
+    transition: 0.5s;
+}
+.toggler:checked + .hamBurger>div{
+    transform: rotate(130deg);
+}
+.toggler:checked + .hamBurger>div::after,.toggler:checked + .hamBurger>div::before{
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+}
+
+h1,h5{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase !important;
+}
+
+.container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important ;
+    object-fit: cover;
+    opacity: 0.8;
+
+}
+.overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     mix-blend-mode: overlay;
+}
+ h3, h5,.text,.program{
+    position: relative;
+    z-index: 0;   
+}
+
+ h3{
+     font-size:5em;
+     text-transform: uppercase;
+     line-height: 1em;
+
+ }
+ .text{
+     font-weight: 700;
+     margin: 20px 0;
+     max-width: 700px;
+ }
+ .program{
+      /* color: white !important; */
+       display: inline-block;
+       text-decoration: none;
+       font-size: 1.2em;
+       background-color: white;
+       padding: 10px 20px;
+       letter-spacing: 2px;
+       color: black;
+       font-weight: 800;
+       transition: 0.3s;
+ }
+ .program:hover{
+     letter-spacing: 6px;
+ }
+ .second_part{
+    display: flex;   
+    align-items: center;
+  }
+.social_icon{
+    position: absolute;
+    bottom: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    letter-spacing: 30px;
+    cursor: pointer;
+    font-size: 25px;
+    transform: scale(1);
+    transition : 0.5s;      
+}
+
+
+@media  (max-width:991px) {
+    .container{
+         padding: 20px;
+    }
+}
+@media  (max-width:385px) {
+   h5{
+      font-size: 1.5rem;
+   }
+   h3{
+       font-size: 2.5em;
+   }
+}
