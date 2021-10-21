@@ -10,13 +10,13 @@ body{
    height: 100vh;
 }
 .container{
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 }
 .sub_container{
     text-align: center;
     color: white;
-  
+    min-height: 30em;
 }
 .bgimage{
     position: absolute;
@@ -31,8 +31,6 @@ body{
 }
 .contentHeader{
      padding: 0em 1.4em;
-     width: 80%;
-     margin: 0 auto;
 }
 .contentHeader h1{
     padding-top: 130px;
@@ -56,3 +54,32 @@ body{
 .contentHeader a:hover{
     letter-spacing: 0.3em;
 }
+
+
+
+/* seocnd part */
+.sectionB{
+    text-align: center;
+    /* margin: 2px 20px; */
+    padding:  25px 20px;
+    background-color: #eaeaea;
+    width: 100%;
+    margin: 0 auto;
+}
+.sectionB h2{
+    font-weight: bolder;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+}
+.contentCourse{
+    columns: 2;
+    column-gap: 2em;
+}
+@media(max-width:600px){
+    .contentCourse{
+        columns: 1;
+    }
+}
+
+
+/* third part */
