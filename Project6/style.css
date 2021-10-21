@@ -161,9 +161,37 @@ body{
 .box2 p{
     padding: 11px;
 }
+
+
+
+
+
+/* sixth */
+.sectionF{
+    background-color: black !important;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.githubId a,.linkdinID a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+.githubId a:hover,.linkdinID a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
 @media (max-width: 700px) {
     .sub_container5{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .sectionF{
+        display: block;
     }
 }
