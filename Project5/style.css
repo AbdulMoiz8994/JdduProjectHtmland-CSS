@@ -13,18 +13,16 @@ body{
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
-.container{
-    height: 100vh;
-    /* background-color: aqua; */
-    background-color:rgba(0, 0, 0, 0.1);
 
-}
 .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-color:rgba(0, 0, 0, 0.1);
+
 }
 .formAuth{
     padding: 30px 100px;
@@ -66,6 +64,7 @@ h1{
 .field.error input{
     border-color: var(--error-color);
 }
+
 .field small {
     color: var(--error-color);
     visibility: hidden;
@@ -73,6 +72,7 @@ h1{
     bottom: 0;
     left: 0;
 }
+/* if the box is input then automatically it will be visible */
 .field.error small{
     visibility: visible;
 }
