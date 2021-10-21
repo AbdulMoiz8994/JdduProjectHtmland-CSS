@@ -136,3 +136,34 @@ body{
 .sub_container4 h2{
     padding-bottom: 1em;
 }
+
+/* fifth part */
+.sub_container5{
+    display: flex;
+    width: 100%;
+    color: white;
+}
+.box1{
+    background-color: #2690d4;
+    text-align: center;
+    padding: 25px;
+}
+.box1 p{
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.box2{
+    background-color: #333;
+    text-align: center;
+    padding: 25px;
+    
+}
+.box2 p{
+    padding: 11px;
+}
+@media (max-width: 700px) {
+    .sub_container5{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
