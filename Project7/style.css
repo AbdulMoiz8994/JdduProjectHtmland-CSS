@@ -23,6 +23,7 @@ body{
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
     text-align: center;
+    transition: 0.4s;
 }
 .Card-img{
    background-image: url('/Images/illustration-hero.svg');
@@ -134,4 +135,8 @@ body{
     .content2{
         margin-top: 20px;
     }
+   }
+   .card:hover{
+       transform: scale(1.1);
+
    }
