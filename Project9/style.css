@@ -50,3 +50,45 @@ body{
     font-weight: 700;
     z-index: 10 !important;
 }
+.container_2{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+.nestedcont_2{
+    /* width: 100vw; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+}
+.nestedcont_2 div{
+    width: 30vw;
+}
+.nestedcont_2 div i{
+    font-size: 4em;
+    
+}
+.nestedcont_2 div{
+    /* width: 100vw; */
+}
+.nestedcont_2 div p{
+    /* width: 50%; */
+    text-align: center;
+   padding: 10px;
+}
+.nestedcont_2 div h1{
+    font-size: large;
+    margin: 10px;
+}
+.container_2  div{
+    color: white;
+}
+@media (max-width:550px) {
+    .nestedcont_2 div{
+        width: 100vw;
+        margin-top: 20px;
+    }   
+}
