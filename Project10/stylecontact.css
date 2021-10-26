@@ -1,0 +1,89 @@
+.containercontact{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    /* min-height: 350px; */
+    margin-bottom: 20px;
+}
+
+.services{
+  width: 60%;
+}
+
+.childrenservice{
+    margin-top: 10px;
+}
+
+.childrenservice li{
+    border: 2px solid rgb(204, 204, 204);
+    background: rgb(230, 230, 230);
+    list-style-type: none;
+    padding: 40px;
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+.formcontact{
+   background: rgb(53, 66, 74);
+   width: 30%;
+   color: white;
+   padding-top: 40px;
+   padding-left: 10px;
+   max-height: 350px;
+
+}
+.formcontact label{
+   display: block;
+   font-weight: bold;
+   margin-top: 10px;
+
+}
+.formcontacts input{
+   /* width: 100%; */
+}
+.btn-contact{
+    display: block;
+    align-items: center;
+    align-self: center !important;
+    margin-bottom: 20px !important;
+}
+#name,#email, #textarea{
+    height: 30px;
+    outline: none;
+}
+#name,#email, #textarea{
+    width: 75%;
+}
+#textarea{
+    height: 50px;
+}
+@media (max-width:867px) {
+    .containercontact{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    text-align: center;
+
+    }
+    .services{
+        width: 80%;
+        margin: auto;
+    }
+    .formcontact{
+        width: 80%;
+    }    
+    #name,#email,#textarea,.btn-contact{
+        width: 80%;
+    }
+    .btn-contact{
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+.footercontact{
+    margin-top: auto !important;
+    display: block;
+}
