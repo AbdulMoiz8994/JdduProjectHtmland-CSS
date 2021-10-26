@@ -190,3 +190,14 @@ form input[type=text]:focus{
     width: 100%;
    } 
 }
+
+
+/* footer */
+.mainFooter{
+    width: 100%;
+    background: #e8491d;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
