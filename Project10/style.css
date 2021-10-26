@@ -63,3 +63,99 @@ header ul li a:focus{
         padding-right: 10px;
     }
 }
+
+
+
+/* /section 2 */
+
+.container1{
+    background-image: url('/Images/showcase\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+}
+.nestedDiv{
+       width:80%;
+    margin: auto;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+}
+
+.nestedDiv h1{
+    margin-top: 60px;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 10px;
+}
+.nestedDiv p{
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .nestedDiv h1{
+        font-size: 35px;
+    }
+}
+
+
+/* containe2 */
+.container2{
+    background: #35424a;
+    color: white;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    /* width: 100%; */
+}
+
+form input[type=text]{
+    padding: 4px;
+    width: 240px;
+    height: 40px;
+    border: none;
+    font-size: medium;
+}
+form input[type=text]:focus{
+   outline: #e8491d;
+
+}
+.btn{
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+}
+
+@media (max-width: 600px) {
+   .container2{
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .form{
+    text-align: center;
+    float: none;
+       margin-top: 10px;
+   }
+   form input[type=text]{
+       width: 100%;
+   }
+   .btn{
+       margin-top: 10px;
+       width: 100%;
+   }
+}
