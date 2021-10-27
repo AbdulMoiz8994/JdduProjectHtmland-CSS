@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100vh;
+    background-image: url('/Images/bg-pattern-top.svg'), url('/Images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+     background-position: right 50vw bottom 50vh,left 50vw top 50vh   
+}
