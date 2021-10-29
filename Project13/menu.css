@@ -41,6 +41,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: 0.5s;
 }
 
 
@@ -68,6 +69,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    visibility: hidden;
 }
 .hamburger>div{
     position: absolute;
@@ -76,6 +78,7 @@ body{
     border-radius: 1rem;
     cursor: pointer;    
     background-color: white;
+    transition: 0.5s;
 }
 .hamburger>div::after{
     content: '';
@@ -99,4 +102,21 @@ body{
     cursor: pointer;
     background-color: white;
 
+}
+.toggler:checked + .hamburger>div{
+    transform: rotate(130deg);
+}
+.toggler:checked + .hamburger>div::after , .toggler:checked + .hamburger>div::before{
+ 
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+}
+@media (max-width:768px) {
+    .hamburger{
+        visibility: visible;
+    }
+    .disable{
+        display: none;
+    } 
 }
