@@ -44,17 +44,17 @@
    font-size: 55px;
    margin: 10px;
 }
-.nestedcont2>h2{
+.nestedcont2>h2,.container3 h1{
     font-size: 30px;
     margin: 20px;
 }
-.nestedcont2>p{
-    font-weight: 600;
+.nestedcont2>p,.container3>p{
+    font-weight: 200;
     font-size: larger;
     margin-top: 10px;
     padding-bottom: 35px;
 }
-.nestedcont2>a{
+.nestedcont2>a, .container3>a{
     text-decoration: none;
     color: white;
     margin: 10px;
@@ -66,3 +66,19 @@
 .imgscreen{
     width: 100%;
 }
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.container3>a{
+    background-color: navy;
+}
+
