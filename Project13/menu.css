@@ -9,6 +9,16 @@ body{
     min-height: 100vh;
     font-family: 'PT Sans', sans-serif;
 }
+.mainContainer{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./Images/showcase.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
 .containerHeader{
     width: 100%;
     padding: 10px;
@@ -106,8 +116,8 @@ body{
 .toggler:checked + .hamburger>div{
     transform: rotate(130deg);
 }
+
 .toggler:checked + .hamburger>div::after , .toggler:checked + .hamburger>div::before{
- 
     transform: rotate(90deg);
     top: 0;
     left: 0;
