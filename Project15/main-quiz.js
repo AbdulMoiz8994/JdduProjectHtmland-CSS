@@ -49,4 +49,29 @@ let questions=[
              "Denis Riche",
         ]
     },
-]
+];
+
+
+// make the counter of question 
+let questionNum=0;
+
+
+// calling function onload
+var load=document.querySelector('body')
+load.onload=function(){
+    question(questionNum)
+}
+// creating the HTml via css
+function question(e){
+    //calling dom element of question
+    const questionele=document.getElementById('questionElement')
+    // console.log(questionele);
+    questionele.innerHTML=questions[0].question
+    // get the dom elements for options
+    const options=document.getElementsByClassName('optionElement')
+    // console.log(options);
+    for(var i=0; i < options.length; i++){
+        options[i].innerHTML=questions[0].option[i]
+    }
+
+}
