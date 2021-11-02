@@ -30,3 +30,13 @@ body{
     justify-content: center;
    align-items: center;
 }
+.optionElement:hover{
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+.active{
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
