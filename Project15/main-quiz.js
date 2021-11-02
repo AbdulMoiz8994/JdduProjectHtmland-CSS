@@ -28,7 +28,9 @@ let questions=[
         answer: "Charles Babbage",
         option:[
             "Augusta Adaming",
-             "Charles babbage",
+            "Charles Babbage",
+            "Mark",
+            "Jenes Sifart"
         ]
     },
     {
@@ -43,10 +45,12 @@ let questions=[
     },
     {
         question: 'Q5 Who is the father of Internet ?',
-        answer: "World Wide Web",
+        answer: "Vint Cerf",
         option:[
             "Vint Cerf",
              "Denis Riche",
+             "Roward",
+             "Watson Raowe"
         ]
     },
 ];
@@ -79,13 +83,17 @@ function question(e){
 
 function nextQuestion(){
     rightanswer(questionNum)    
+    
     questionNum++;
+    if(questionNum >= 5){
+        //    alert(`This is your result ${score} out of 50`)
+           const button=document.querySelector('.button');
+            // console.log(button);    
+                button.innerHTML='Result'
+                
+    }
     removeactiveclass()
      question(questionNum)
-    //  console.log(questions.length);
-//    if(questions.length >=4){
-//        alert("Show Result")
-//    }
 
 }
 
