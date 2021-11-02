@@ -90,13 +90,14 @@ function nextQuestion(){
            const button=document.querySelector('.button');
             // console.log(button);    
                 button.innerHTML='Result'
-            //  if(button.innerHTML=='Result'){
+            //  if(button.innerHTML='Result' == 'Result'){
             //     alert(`${score}`)
             //  }   
     }
+    scores()
+
     removeactiveclass()
      question(questionNum)
-
 }
 
 
@@ -125,4 +126,11 @@ function rightanswer(e){
         }
     }
     
+}
+
+function scores(){
+    if(questionNum  > 5){
+    // console.log("goof");
+    alert(`${score}`)
+    }
 }
