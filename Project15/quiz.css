@@ -1,7 +1,14 @@
-.wrapper{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper,.mainResultDiv{
     width: 100vw;
     height: 100vh;
     background-image: radial-gradient( circle 993px at 0.5% 50.5%, rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+    font-family: 'Quicksand', sans-serif !important;
+
 }
 .cards{
     width: 60vw;
@@ -12,4 +19,27 @@
     background-color: #0d6efd !important;
     color: white;
     font-size: larger;
+}
+
+
+/* quiz result page css */
+.mainResultDiv{
+    width: 100%;
+     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainResultDiv img{
+      height: 300px;
+}
+.mainResultDiv a{
+   text-decoration: none;
+   padding: 20px 30px;
+   color: white;
+   background: linear-gradient(to left,#24243e,#302b63,#0f0c29);
+   border-radius: 8px;
+   cursor: pointer;
 }
