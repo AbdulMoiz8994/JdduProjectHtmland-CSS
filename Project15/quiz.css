@@ -1,0 +1,15 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%, rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+.cards{
+    width: 60vw;
+    
+}
+.card-header{
+    /* background: linear-gradient(to right,#24243e,#302b63,#0f0c29); */
+    background-color: #0d6efd !important;
+    color: white;
+    font-size: larger;
+}

@@ -65,6 +65,11 @@ let score=0;
 var load=document.querySelector('body')
 load.onload=function(){
     question(questionNum)
+    var username=document.getElementById('nameProp')
+    console.log(username);
+    let getName=localStorage.getItem('Name');
+    // console.log(getName);
+    username.innerHTML=getName.toUpperCase()
 }
 // creating the HTml via css
 function question(e){
@@ -129,8 +134,11 @@ function rightanswer(e){
 }
 
 function scores(){
+    
     if(questionNum  > 5){
     // console.log("goof");
-    alert(`${score}`)
+    location.href="resultpage.html"
+    localStorage.setItem('value',score)
     }
+       
 }
