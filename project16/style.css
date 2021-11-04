@@ -15,21 +15,21 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-
+  flex-wrap: wrap;
 }
 .nesteddiv1{
-    width: 30%;
+    width: 40%;
     height: 100vh;
     background-color: #181818;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
 }
 .nesteddiv1 img{
-    width: 80%;
+    width: 70%;
 }
 .form{
     margin-top: 50px;
@@ -63,6 +63,7 @@ body{
     transform: all 0.5s;
     color: white;
       font-size: large;
+      cursor: pointer;
 }
 
 /* second Div */
@@ -75,4 +76,88 @@ body{
     text-decoration: none;
    color: white;
    line-height: 40px;
+}
+.or{
+    display: flex;
+    /* flex: auto; */
+    text-align: center;
+}
+.or > p{
+    color: #fff;
+}
+.line{
+    color: white;
+    background-color: white;
+    width: 80px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button{
+    margin-top: 30px;
+}
+
+.button a{
+   text-decoration: none;
+   color: white;
+   border: 2px solid gray;
+   padding: 10px 30px;
+   border-radius: 5px;
+}
+
+
+.footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 100vh;
+   margin-bottom: 20px;
+   color: white;
+   
+}
+.footerdiv{
+   text-align: center;
+   color: white;
+}
+.footerdiv a{
+    color: #f96816;
+}
+
+/* /container2 */
+.nesteddiv2{
+    width: 60%;
+    height: 100vh;
+    background: url('./Images/login-bg.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nesteddiv2 h1{ 
+   text-align: center;
+   color: white;
+   font-size: 45px;
+   font-weight: 40;
+}
+span{
+    /* font-weight: bolder; */
+    font-weight: bolder;
+    font-weight: 900;
+}
+.btn-footer a{
+    border: 2px solid white;
+}
+
+@media (max-width:768px) {
+    .nesteddiv1{
+        width: 100%;
+    
+}
+#email,#password,.btn{
+    width: 50vw;
+}   
+.nesteddiv2{
+    display: none;
+}
 }
