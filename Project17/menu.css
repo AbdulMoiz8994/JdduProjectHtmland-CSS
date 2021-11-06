@@ -6,8 +6,9 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 .menu-container{
    width: 100%;
@@ -17,11 +18,12 @@ body{
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 1;
 }
 
 .nested-container{
     width: 70%;
-    height: 50px;
+    height: 45px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -29,11 +31,121 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 .fab{
     font-size: 20px;
 }
+
+
 .nested-container a{
     text-decoration: none;
     color: lightgray;
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    display: none;
+}
+#toggler{
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+    background-color: white;
+}
+.hamburger{
+   position: absolute;
+   top: -0.9rem;
+   left: 0.3rem;
+   width: 27px;
+   height: 27px;
+    z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   transition: 0.5s;
+}
+.hamburger>div{
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 0.1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.hamburger>div::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 100%;
+    height: 0.1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+#toggler:checked + .hamburger>div{
+    transform: rotate(130deg);
+}
+#toggler:checked + .hamburger>div::after{
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+
+}
+.nested_container2{
+    position: absolute;
+    top: 40px;
+    background-color: #E34140;
+    width: 100%;
+    min-height: 35px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-weight: 100;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.nested_container2 p span{
+   cursor: pointer;
+}
+
+@media (max-width:1055px) {
+    .nested-container{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 786px) {
+    .list,.fas{
+        display: none !important;
+    }
+    .bag{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+       top: 0px;
+    }
+    .nested-container{
+        width: 100%;
+    }
+    .menu{
+        display: inline-block;
+    }
+    .nested_container2 p{
+        font-size: 14px;
+    }
 }

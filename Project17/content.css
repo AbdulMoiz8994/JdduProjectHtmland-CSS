@@ -1,0 +1,166 @@
+.main_box{
+    width: 100%;
+    min-height: 100vh;
+}
+.content{
+    position: relative;
+    top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+}
+
+.content p{
+   padding-top: 10px;
+   font-size: x-large;
+}
+.link{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.link a{
+    text-decoration: none;
+    color: #06c;
+    padding-left: 12px;
+}
+
+.images{
+  width: 100%;
+  height: 80vh;
+  margin-top: -7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.medium{
+  width: 80%;
+  height: 100vh;
+}
+.small{
+    display: none;
+}
+
+.conatiner{
+ width: 100%;
+ /* height: 100vh; */
+ margin-top: 100px;
+ position: relative;
+}
+.content2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.child2 h1{
+    font-size: 50px;
+    color: white;
+}
+.child2 p{
+    color: #fec2eb;
+    font-size: 24px;
+}
+.imagessetion{
+    width: 100%;
+    height: 698px;
+    background-image: url('./Images/Iphone13Pro/Part2/hero_iphone_13__f194u1rdooeq_mediumtall.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 698px;
+}
+
+
+/* container3 */
+.container3{
+    margin-top: 10px;
+    width: 100%;
+    max-height: auto;
+}
+.imegcontainer3{
+    background-image: url('./Images/Iphone13Pro/hero_finch__djwbbyxljno2_large.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+.content_text{
+    width: 100vw;
+    height: auto;
+    color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    bottom: 200px;
+}
+/*
+.content_text{
+    z-index: 1;
+    position: relative;
+    top: -300px;
+} */
+.section4{
+    position: relative;
+    bottom: 180px;
+}
+.imghero{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    .medium{
+        display: none;
+    }
+    .small{
+        display: inline-block;
+        width: 100%;
+    }
+    .conatiner{
+        margin-top: 0px;
+    }
+    .imagessetion{
+        width: 100%;
+        height: 698px;
+        background-image: url('./Images/Iphone13Pro/Part2/hero_iphone_13__f194u1rdooeq_small.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 698px
+    }
+    .content2{
+        height: 90vh;
+        width: 100%;
+    }
+    .child2 h1{
+        font-size: 35px;
+    }
+    .child2 p{
+        font-size: 20px;
+    }
+    .imegcontainer3{
+     display: none;
+    }
+    /* .content_text{
+        width: 80vw;
+        color: black;
+        margin-top: -305px;
+        text-align: center;
+        color: white;
+    } */
+    .imghero{
+       display: inline-block;
+       width: 115vw;
+    }
+}
