@@ -82,6 +82,7 @@
     margin-top: 10px;
     width: 100%;
     max-height: auto;
+    margin-bottom: 20px;
 }
 .imegcontainer3{
     background-image: url('./Images/Iphone13Pro/hero_finch__djwbbyxljno2_large.jpg');
@@ -91,6 +92,7 @@
     width: 100%;
     height: 80vh;
 }
+
 .content_text{
     width: 100vw;
     height: auto;
@@ -104,19 +106,24 @@
     align-items: center;
     z-index: 10;
     position: relative;
-    bottom: 200px;
+    bottom: 250px;
 }
-/*
-.content_text{
-    z-index: 1;
-    position: relative;
-    top: -300px;
-} */
+
+.apple,.finchHeading,.smallImage,.smallfinch{
+    padding-bottom: 15px;
+}
+.smallImage{
+ display: none;             
+}
+.content_text P{
+    font-size: 23px;
+}
 .section4{
     position: relative;
-    bottom: 180px;
+    bottom: 200px;
+    /* background-color: yellow; */
 }
-.imghero{
+.imghero,.xsmall{
     display: none;
 }
 
@@ -152,15 +159,39 @@
     .imegcontainer3{
      display: none;
     }
-    /* .content_text{
-        width: 80vw;
-        color: black;
-        margin-top: -305px;
-        text-align: center;
-        color: white;
-    } */
+    .content_text{
+        bottom: 200px;  
+    }
     .imghero{
        display: inline-block;
        width: 115vw;
+       height: 548px;
+
     }
+    
+    .smallImage{
+      display: inline-block;         
+    }
+    .apple,.finchHeading{
+        display: none;
+    }
+.arrow{
+    display: inline-block !important;
+}
+
+}
+
+
+@media (max-width:500px) {
+    .imghero{
+        display: none !important;
+    }
+    .xsmall{
+       display: inline-block !important;
+       width: 115vw;
+       height: 548px;
+    }
+    .smallfinch,.smallfinch{
+
+    }   
 }
