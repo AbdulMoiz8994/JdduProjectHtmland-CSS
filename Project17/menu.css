@@ -8,7 +8,7 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .menu-container{
    width: 100%;
@@ -106,7 +106,6 @@ body{
     position: absolute;
     top: 40px;
     background-color: #E34140;
-    width: 100%;
     min-height: 35px;
    display: flex;
    flex-direction: row;
@@ -117,6 +116,8 @@ body{
    font-weight: 100;
    text-align: center;
    margin-top: 10px;
+   width: 100%;
+
 }
 
 .nested_container2 p span{
