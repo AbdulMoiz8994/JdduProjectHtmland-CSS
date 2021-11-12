@@ -17,7 +17,7 @@ body{
     width: 100%;
     min-height: 100vh;
 }
-.nesteddiv_1{
+.nesteddiv_1,.conatiner2{
     width: 100%;
     min-height: 40px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -44,6 +44,11 @@ body{
 .contactlink a{
     color: var(--fontColor);
 }
+
+.contactlink a:hover,.socialmediaicons a:hover{
+    color: var(--mainColor) !important;
+}
+
 .contactlink a i{
     color: var(--mainColor);
 }
@@ -54,6 +59,7 @@ body{
     border-radius: 4px;
     text-transform: uppercase;
 }
+
 @media (max-width:745px) {
     .centerContantNumber{
         display: none !important;
@@ -74,4 +80,20 @@ body{
    .btn-navbar{
        padding-top: 8px !important;
    }
+}
+
+/* conatiner2 */
+.conatiner2{
+    background-color: white;
+    min-height: 60px;
+}
+.conatiner2 img{
+    cursor: pointer;
+}
+.links2 a{
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.links2 a:hover{
+    color: var(--mainColor);
 }
