@@ -60,27 +60,6 @@ body{
     text-transform: uppercase;
 }
 
-@media (max-width:745px) {
-    .centerContantNumber{
-        display: none !important;
-    }
-    .nesteddiv_1{
-        padding-left: 10px;
-    }
-}
-@media (max-width:552px) {
-    .nesteddiv_1{
-        flex-direction: column;
-    }  
-}
-@media (max-width:340px){
-   .contactlink a{
-       font-size: 13px;
-   }
-   .btn-navbar{
-       padding-top: 8px !important;
-   }
-}
 
 /* conatiner2 */
 .conatiner2{
@@ -96,4 +75,101 @@ body{
 }
 .links2 a:hover{
     color: var(--mainColor);
+}
+@media (max-width:990px) {
+   .links2{
+    display: none;
+   } 
+}
+
+
+.conatiner3{
+    background-image: url('./Images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    min-height:70vh;
+
+}
+.conatiner3 img{
+    /* width: 100%; */
+}
+.content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.content>h1{
+    width: 100%;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.content p{
+    font-weight: 300;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+    background-color: #febd19;
+    box-shadow: 0px 3px 1px #FE831C;
+    width: 150px;
+    padding: 10px 20px;
+}
+.mainDot{
+    height: 100%;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+.dots{
+    background-color: white;
+    width: 5px;
+    height: 8px;
+    padding-right: 40px;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+.lightDots{
+    background-color: rgba(256, 256, 256, 0.6);
+}
+@media (max-width:745px) {
+    .centerContantNumber{
+        display: none !important;
+    }
+    .nesteddiv_1{
+        padding-left: 10px;
+    }
+    .content{
+        width: 80%;
+    }
+}
+@media (max-width:552px) {
+    .nesteddiv_1{
+        flex-direction: column;
+    }  
+}
+@media (max-width:350px){
+   .contactlink a{
+       font-size: 13px;
+   }
+   .btn-navbar{
+       padding-top: 8px !important;
+   }
+   .dots{
+       margin-top: 80px;
+   }
 }
