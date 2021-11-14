@@ -1,0 +1,38 @@
+/* form Our Process Portion Start from here */
+.container8{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.containr8content{
+    width: 50%;
+    text-align: center;
+}
+
+.circle_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+}
+
+.cont_8{
+    border-radius: 50%;
+    padding: 50px 50px;
+}
+
+@media (max-width:768px) {
+    .containr8content{
+        width: 80%;
+    }
+}
+
+
+
