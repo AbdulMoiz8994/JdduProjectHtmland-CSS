@@ -46,7 +46,8 @@ text-align: center;
 margin-top: 20px;
 padding-top: 20px;
 background-color: lightgrey;
-
+margin-bottom: 20px;
+padding-bottom: 20px;
 }
 .cont9_content{
     width: 50%;
@@ -91,6 +92,34 @@ background-color: lightgrey;
 .textArea h1 img{
     display: none;
 }
+.colorsDots_cont9{
+    background-color: #febd19;
+}
+.colorsDot{
+    background-color: #FE831C;
+}
+
+/* container10 */
+.conatiner10{
+    width: 100%;
+    text-align: center;
+}
+.cont10_content{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.counterImages{
+    width: 100%;
+}
+.counterImages img{
+    width: 80%;
+}
+
+
+
+
+
 
 @media (max-width:1270px) {
     .v1{
