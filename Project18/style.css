@@ -111,7 +111,7 @@ body{
 .content p{
     font-weight: 400;
 }
-.content a, .container5Btn{
+.content a, .container5Btn,.btn_cont11{
     text-decoration: none;
     color: black;
     background-color: #febd19;
