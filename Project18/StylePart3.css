@@ -164,8 +164,27 @@ padding-bottom: 20px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+.contactInfo_Cont12 ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
+}
+.contactInfo_Cont12 ul li{
+    list-style-type: none;
+
+}
+.contactInfo_Cont12 ul li a{
+    color: black;
+
+}
+.phone_cont12{
+    color: #93C444;
+}
 
 
 
