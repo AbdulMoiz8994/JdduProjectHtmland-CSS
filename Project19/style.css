@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./Images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+}
+.mainContainer{
+    /* min-width: 80vw;
+    min-height: 100vh; */
+    /* position: relative; */
+    /* margin-top:60px; */
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 580px;
+    position: relative;
+    background: rgba(255, 255, 225, 0.5);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+}
+/* .content{
+
+} */
+.header{
+    width: 100%;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: rgba(255, 255, 225, 0.2);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    border: 2px solid rgba(255, 255, 225, 0.25);
+    border-top: 2px solid rgba(255, 255, 225, 0.5);
+    border-left: 2px solid rgba(255, 255, 225, 0.5);
+}
+.header>a{
+    font-size: 30px;   
+    font-weight:bolder;
+
+}
+.header ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 22px;
+}
+.header ul li a, .header > a{
+    text-decoration: none;
+    color: #8a2435;
+   font-weight: 700;
+}
+.header ul li a{
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+.header ul li a:hover, .header ul li a.active{
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(255, 255, 225, 0.1);
+}
+
+
+.contents{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.text{
+    width: 50%;
+    box-shadow: 0px 15px 30px rgba(255, 255, 225, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 225, 0.3);
+    border: 2px solid rgba(255, 255, 225, 0.25);
+    border-bottom: 2px solid rgba(255, 255, 225, 0.5);
+    border-left: 2px solid rgba(255, 255, 225, 0.5);
+    padding: 8px 12px;
+}
+.text h2{
+    font-size: 3em;
+    color: #8a2435;
+}
+.text p{
+    font-size: 1.2em;
+    color: #8a2435;
+word-wrap: break-word;
+}
+.image img{
+    width: 100%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-10px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+}
+.contents a{
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #8a2435;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.socialmedia{
+    /* position: absolute;
+    right: -90px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialmedia li{
+   list-style-type: none;
+}
+.socialmedia li a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  margin: 5px 0;
+  box-shadow: 0px 5px 10px rgba(255, 255, 225, 0.1);
+  color: black;
+}
+.socialmedia li a i{
+   transform: scale(1);
+   transition: 0.8s;
+}
+.socialmedia li a i:hover{
+    transform: scale(1) rotate(360deg);
+}
+
+
+
+@media (max-width:955px) {
+ .text h2{
+     font-size: 2em;
+ }   
+}
+@media (max-width:800px) {
+   .contents{
+       flex-direction: column;
+   }
+   .socialmedia{
+       flex-direction: row;
+       margin-top: 20px;
+   }
+   .text{
+       width: 100%;
+   }    
+   }
+
+   @media (max-width:670px) {
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header ul li{
+        font-size: 18px;
+    }
+    .header ul li a{
+        padding: 8px 10px;
+    }
+   }
+      
+   @media (max-width:490px) {
+       .header ul{
+           width: 100%;
+           text-align: center;
+       }
+    .header ul li{
+        font-size: 14px;
+    }
+    .header ul li a{
+        padding: 8px;
+    }
+   }
