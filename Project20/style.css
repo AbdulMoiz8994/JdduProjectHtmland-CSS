@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #E03B8B,#5A20CB);
+}
+.main_container{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.album{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    margin-right: 20px;
+    flex-basis: 30.33%;
+}
+.image img{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.text{
+    padding-top: 10px;
+    font-size: 12px;
+    width: 40%;
+}
+.text p{
+    padding-top: 8px;
+}
+@media (max-width:1200px) {
+    .image img{
+        height: 300px;
+        width: 300px;
+    }
+    .text{
+        width: 80%;
+    }
+}
+@media (max-width:1110px) {
+   .album{
+       flex-basis: 45%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+}
+@media (max-width:768px) {
+    .main_container{
+        width: 80%;
+        flex-direction: column;
+    }
+}
