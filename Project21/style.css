@@ -44,7 +44,7 @@ body{
     font-size: 20px;
     color: #648880;
 }
-.links ul{
+.links ul,.linkList>ul{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -52,12 +52,12 @@ body{
    align-items: center;
    margin-bottom: -30px;
 }
-.links ul li{
+.links ul li,.linkList ul li{
     list-style-type: none;
     text-transform: uppercase;
    
 }
-.links ul li a{
+.links ul li a,.linkList ul li a{
    text-decoration: none;
    color:white;
    margin-right: 40px;
@@ -126,6 +126,24 @@ body{
   width: 90%;
   word-spacing: 6px;
 }
+.footer{
+    width: 100%;
+    background-color: #293f50;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 10px;
+}
+.copywrite{
+    color: #648880; 
+}
+.linkList ul{
+margin-bottom: 0px;
+}
+
+
 @media (max-width:975px) {
     .heading h1{
         width: 100%;
@@ -137,11 +155,20 @@ body{
         width: 45%;
     }   
 }
-@media (max-width:530px) {
-    .links ul{
-        justify-content: center;
+@media (max-width:700px) {
+    .footer{
+        flex-direction: column;
     }
-    .links ul li a{
+    .linkList ul li a{
+        margin-right: 20px;
+    }
+}
+@media (max-width:530px) {
+    .links ul,.linkList ul{
+        justify-content: center;
+        line-height: 50px;
+    }
+    .links ul li a,.linkList ul li a{
         margin-right: 20px;
     }
     .heading h1{
