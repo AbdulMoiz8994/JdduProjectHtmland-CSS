@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.main_container{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #293f50;
+    color: #888;
+    padding-bottom: 20px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-weight: lighter;
+    width: 50%;
+}
+.links{
+    text-align: center;
+    line-height: 40px;
+}
+.links p{
+    font-size: 20px;
+    color: #648880;
+}
+.links ul{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: -30px;
+}
+.links ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+   
+}
+.links ul li a{
+   text-decoration: none;
+   color:white;
+   margin-right: 40px;
+}
+.text{
+    text-align: center;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.text h2{
+    font-size: xx-large;
+    color: #648880;
+}
+.text p{
+    width: 80%;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.text a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 22px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+@media (max-width:975px) {
+    .heading h1{
+        width: 100%;
+    }   
+}
+@media (max-width:530px) {
+    .links ul{
+        justify-content: center;
+    }
+    .links ul li a{
+        margin-right: 20px;
+    }
+    .heading h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .text{
+        width: 90%;
+    }
+}
