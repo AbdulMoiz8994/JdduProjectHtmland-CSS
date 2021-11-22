@@ -1,0 +1,30 @@
+.main_contSpeakers{
+    min-height: 25vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.text_speakers{
+    background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 40px;
+}
+.text_speakers h2{
+    font-size: xx-large;
+    color: #648880;
+}
+.text_speakers p{
+    width: 80%;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:786px) {
+    .text_speakers p{
+        width: 100%;
+    }
+}

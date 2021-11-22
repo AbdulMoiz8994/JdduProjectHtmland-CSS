@@ -142,7 +142,10 @@ body{
 .linkList ul{
 margin-bottom: 0px;
 }
-
+.heading h1:hover,.links ul li a:hover{
+    color: #648880;
+    cursor: pointer;
+}
 
 @media (max-width:975px) {
     .heading h1{
