@@ -12,7 +12,7 @@
     text-align: center;
     padding: 30px 40px;
 }
-.text_speakers h2{
+.text_speakers h2, .data h2{
     font-size: xx-large;
     color: #648880;
 }
@@ -22,6 +22,67 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+.ListSpeakers{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+}
+.data{
+    width: 60%;
+}
+.data h2{
+  font-size: 24px;
+}
+.capital{
+    text-transform: uppercase;
+}
+.data p{
+    padding: 18px 0px;
+    text-align: justify;
+    color: #888;
+    font-weight: 600;
+}
+.card{
+    border: 1px solid gray;
+    width: 250px;
+    border-radius: 4px;
+}
+.box{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;  
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+.box{
+    line-height: 30px;
+}
+.box p{
+    color: #648880;
+}
+@media (max-width:962px) {
+   .card{
+       margin-top: 50px;
+   }
+   .data{
+       width: 100%;
+   }
 }
 @media (max-width:786px) {
     .text_speakers p{
