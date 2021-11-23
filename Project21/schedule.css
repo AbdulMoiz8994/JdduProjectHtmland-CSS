@@ -45,11 +45,13 @@ tbody{
 .heading{
     font-size: 24px;
     color: #648880;
+    cursor: pointer;
 }
 
 .colorChange{
     color: #648880;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width:1280px) {
