@@ -74,6 +74,9 @@
 #passes{
 width: 20%;
 }
+#Comments{
+    padding-top: 10px;
+}
 .btn{
     text-decoration: none;
     color: white;
