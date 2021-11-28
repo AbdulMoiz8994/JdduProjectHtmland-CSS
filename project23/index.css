@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    /* overflow-x: hidden; */
+}
+.heading h2{
+    color: rgb(254,200,55);
+
+}
+.main_body{
+    min-height: 100vh;
+}
+.header,.content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 10vh;
+    /* margin-bottom: 120px; */
+    z-index: 10 !important;
+}
+
+.listUL ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.listUL ul li a{
+    color:black;
+    text-decoration: none;   
+    padding: 0px 10px;
+
+}
+.buttons a,.expolre_courses{
+   background-color: rgb(250,207,55);  
+   border-radius: 10px;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: black;
+   text-transform: uppercase;
+   z-index: 10 !important;
+
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 90%;
+    background-color: rgba(254,200,55,0.6);
+    border-radius: 0 0 50% 80%/0 0 0% 100%;
+    margin-left: auto;
+    z-index: -1;
+}
+.content2{
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.text1,.image{
+    flex: 1  !important;
+}
+.text1>h1{
+    width: 80%;
+}
+.text1>h1>span{
+    font-size: 55px;
+    color: rgb(254,200,55);
+}
+.expolre_courses{
+    line-height: 50px;
+}
+
+.image img{
+    width: 100%;
+}
+@media (max-width:1250px) {
+    .text1>h1>span{
+        font-size: 45px;
+    }
+    .text1>h1{
+        width: 100%;
+    }
+}
+@media (max-width:1024px) {
+    .text1>h1>span{
+        font-size: 35px;
+    }
+}
+@media (max-width:768px) {
+    .header{
+        flex-direction: column;
+    }
+    .content2{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .image{
+        order: -1;
+    }
+    .buttons{
+        margin-top: 20px;
+    }
+    .header::before{
+        width: 100%;
+        max-height: 80%;
+    }       
+}
+@media (max-width:425px) {
+    .header::before{
+        width: 100%;
+        max-height: 60%;
+    }
+}
+@media (max-width:400px) {
+    .listUL ul li a{
+        padding: 0px 6px;
+    }
+    .listUL ul li{
+        margin-top: 10px !important;
+    }    
+    .text1>h1>span{
+        font-size: 28px;
+    }
+    .text1>h1{
+        font-size: 25px;
+    }
+    .header::before{
+   background-color: white;
+    }
+}
